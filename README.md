@@ -1,40 +1,58 @@
 # OpenVPN-Ubuntu-18.04-Offline
-##Installs and configure OpenVPN in an isolated network for special use-cases.
+## Installs and configure OpenVPN in an isolated network for special use-cases.
 
-*SFTP into the target Ubuntu 18.04 server
+* SFTP into the target Ubuntu 18.04 server
 
-```sftp example_user@target_server_ip```
+```
+sftp example_user@target_server_ip
+```
 
-*Upload the contents of this repository to the server
+* Upload the contents of this repository to the server
 
-```put ./* .```
+```
+put ./* .
+```
 
-*Exit the SFTP server*
+* Exit the SFTP server
 
-```exit```
+```
+exit
+```
 
-*SSH into the target server
+* SSH into the target server
 
-```ssh example_user@target_server_ip```
+```
+ssh example_user@target_server_ip
+```
 
-*Make the openvpn-install script executable
+* Make the openvpn-install script executable
 
-```chmod +x openvpn-install.sh```
+```
+chmod +x openvpn-install.sh
+```
 
-*Execute the script with sudo priviledges
+* Execute the script with sudo priviledges
 
-```sudo ./openvpn-install.sh```
+```
+sudo ./openvpn-install.sh
+```
 
-*SFTP back into the target server
+* SFTP back into the target server
 
-```sftp example_user@target_server_ip```
+```
+sftp example_user@target_server_ip
+```
 
-*Download the client.ovpn file
+* Download the client.ovpn file
 
-```get client.ovpn .```
+```
+get client.ovpn .
+```
 
-*Exit the SFTP server*  
+* Exit the SFTP server
 
-```exit```
+```
+exit
+```
 
-*Double click the client.ovpn file in Finder to install the VPN configuration to Tunnelblick
+* Double click the client.ovpn file in Finder to install the VPN configuration to Tunnelblick
